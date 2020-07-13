@@ -20,7 +20,7 @@ module.exports = function (date) {
             let day = formatDate(this.date.getDate());
             let hours = formatDate(this.date.getHours());
             let minutes = formatDate(this.date.getMinutes());
-
+            this.date.getUTCDate()
             let result = year + '-' + month + '-' + day + " " + hours + ":" + minutes;
             return result;
         },

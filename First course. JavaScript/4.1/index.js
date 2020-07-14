@@ -2,8 +2,9 @@
 
 
 function query(collection) {
-    let result = collection.slice();
-    let queue = []
+    let result = cloneArrayWithObject(collection)
+    if (arguments.length === 1) return result;
+    let queue = [];
     for (let i = 1; i < arguments.length; i++){
         if (arguments[i].name === 'select') queue.push(arguments[i])
         else queue.unshift(arguments[i])
@@ -14,6 +15,13 @@ function query(collection) {
     return result;
 }
 
+function cloneArrayWithObject(collectionArray) {
+    let newArray = [];
+    collectionArray.forEach(it => {
+        newArray.push(Object.assign({}, it))
+    })
+    return newArray
+}
 
 /*
 Сначала берем все элементы для выборки и сохраняем в массиве.
@@ -28,15 +36,12 @@ function select() {
         }
     }
     return function select(collection) {
-        var t =  collection.map((it) => {
+        return  collection.map((it) => {
             Object.keys(it).forEach((field) => {
                 if(!arraySelectField.includes(field)) delete it[field]
             })
+            return it
         })
-        console.log(t);
-        return t;
-
-
     }
 }
 
@@ -44,7 +49,9 @@ function select() {
 //Выполняем фильтрацию. Если свойство содержит одно из значений values, то оставляем его
 function filterIn(property, values) {
     return function filterIn(collection) {
-        return collection.filter(item => values.includes(item[property]))
+        return collection.filter((item) => {
+            return values.includes(item[property]);
+        })
     }
 }
 

@@ -12,6 +12,11 @@
                 margin-left: 0; /* Отступ слева в браузере IE и Opera */
                 padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
             }
+            footer {
+                margin: 0;
+                padding: 0;
+                background: #b3b3b3;
+            }
             td {
                 border: 1px solid black;
             }
@@ -36,7 +41,7 @@
     <h4>Этапы первой загрузки:</h4>
         <ol>
             <li>подготовка</li>
-            <li>загрузка статики (HTTP-запрос и парсинг)</li>
+            <li>загрузка статики (<abbr title="HyperText Transfer Protocol">HTTP</abbr>-запрос и парсинг)</li>
             <li>исполнение модулей</li>
             <li>инициализация базовых объектов</li>
             <li>отрисовка</li>
@@ -47,14 +52,14 @@
             <li>Подготовка к запросу на сервер</li>
             <li>запрос данных с сервера</li>
             <li>шаблонизация</li>
-            <li>обновление DOM</li>
+            <li>обновление <abbr title="Document Object Model">DOM</abbr></li>
         </ol>
 
         <article>
-            — «Ок, теперь у нас есть метрики, мы можем отправить их на сервер» - говорим мы <br>
-            — «Что же дальше?» - вопрошаете вы <br>
-            — «А давай построим график!» - отвечаем мы <br>
-            — «А что будем считать?» - уточняете вы <br>
+             — <q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q> - говорим мы <br>
+            — <q>Что же дальше?</q> - вопрошаете вы <br>
+            — <q>А давай построим график!»</q> - отвечаем мы <br>
+            — <q>А что будем считать?»</q> - уточняете вы <br>
         </article>
 
         <p>
@@ -70,7 +75,7 @@
 
 
         <dl>
-            <dt>APDEX</dt>
+            <dt><APDEX</dt>
             <dd>метрика, которая сразу говорит: хорошо или плохо. Метрика
                 работает очень просто</dd>
         </dl>
@@ -119,10 +124,10 @@
         <h4>Чтобы снизить время загрузки почты при выходе новых версий,
             мы уже делаем следующее:</h4>
         <ol>
-            <li>включаем gzip;</li>
+            <li>включаем <abbr>gzip</abbr>;</li>
             <li>выставляем заголовки кэширования</li>
-            <li>фризим CSS, JS, шаблоны и картинки</li>
-            <li>используем CDN</li>
+            <li>фризим <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, шаблоны и картинки</li>
+            <li>используем <abbr title="Content Delivery Network">CDN</abbr></li>
         </ol>
 
         <p>
@@ -132,11 +137,11 @@
         </p>
 
         <p>На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
-            RFC 3229 «Delta encoding in HTTP» и «Google SDHC», — но по разным причинам они
+            RFC 3229 «Delta encoding in <abbr title= "HyperText Transfer Protocol">HTTP</abbr>» и «Google <abbr title="Secure Digital High Capacity">SDHC</abbr>», — но по разным причинам они
             не получили должного распространения в браузерах и на серверах.</p>
 
-      <p>Мы же решили сделать свой аналог на JS. Чтобы реализовать этот метод обновления,
-          начали искать реализации diff на JS. На популярных хостингах кода нашли
+      <p>Мы же решили сделать свой аналог на <abbr title="JavaScript">JS</abbr>. Чтобы реализовать этот метод обновления,
+          начали искать реализации diff на <abbr title="JavaScript">JS</abbr>. На популярных хостингах кода нашли
           библиотеки:</p>
         <ol>
             <li>VCDiff</li>
@@ -194,10 +199,12 @@
             наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
         </p>
 
-        <p><strong>Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно (BFGS)</strong>
-            — итерационный метод численной оптимизации, предназначенный для
+        <dl><dt>Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно</dt>
+            <dd> — итерационный метод численной оптимизации, предназначенный для
             нахождения локального максимума/минимума нелинейного функционала
-            без ограничений.</p>
+            без ограничений.
+            </dd>
+        </dl>
 
         <h4>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</h4>
         <ol>
@@ -244,18 +251,19 @@
         </article>
 
         <h3>Комментарии (3):</h3>
-
         <ol style="list-style-type: none" class="comment_list">
             <li class="comment">
                 <section>
-                    <h4>Mogaika (mogaika@yandex-team.ru)</h4>
+                    <h4>Mogaika </h4>
+                    <pre><a href="mogaika@yandex-team.ru">email:mogaika@yandex-team.ru</a></pre>
                     <p>А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
                     <pre>30 ноября 2014 в 17:05</pre>
                 </section>
             </li>
             <li class="comment">
                 <section>
-                    <h4>JIguse (mrawesome@yandex.ru) </h4>
+                    <h4>JIguse </h4>
+                    <pre><a href="mrawesome@yandex.ru">email:mrawesome@yandex.ru</a></pre>
                     <p>Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
                         подробностями о внутренней работе сервисов.</p>
                     <pre>29 ноября 2014 в 21:30</pre>
@@ -263,7 +271,8 @@
             </li >
             <li class="comment">
                 <section>
-                    <h4>Brister (brist89@yandex-team.ru)</h4>
+                    <h4>Brister</h4>
+                    <pre><a href="brist89@yandex-team.ru">email:brist89@yandex-team.ru</a></pre>
                     <p>(кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
                         Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
                         хорошо или плохо работает почта.
@@ -274,7 +283,8 @@
             </li>
             <li class="comment">
                 <section>
-                    <h4>alexeimois (test@yandex.ru) </h4>
+                    <h4>alexeimois </h4>
+                    <pre><a href="test@yandex.ru">email:test@yandex.ru</a></pre>
                     <p>Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
                        <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a> </p>
                     <pre>22 ноября 2014 в 17:35</pre>

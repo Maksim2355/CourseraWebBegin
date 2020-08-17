@@ -13,6 +13,7 @@ const OPERATION_SUBTRACT = '-'
 module.exports = function (date) {
     return {
         value: "empty(empty)",
+        date: new Date(date),
         get value(){
             //Надеюсь данный геттер покажет все мое презрение к регулярным выржениям
             let year = this.date.getFullYear();
@@ -24,7 +25,6 @@ module.exports = function (date) {
             let result = year + '-' + month + '-' + day + " " + hours + ":" + minutes;
             return result;
         },
-        date: new Date(date),
         add: function (value, command) {
             if(isValidCommand(value, command)) {
                 operationDate(value, command, OPERATION_ADD, this.date);

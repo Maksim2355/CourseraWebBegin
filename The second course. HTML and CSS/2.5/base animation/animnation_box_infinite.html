@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box</title>
+    <style>
+        #box {
+            width: 150px;
+            height: 150px;
+            background: #f00;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+        }
+        #box:hover {
+            background-color: #ffff66;
+        }
+        .animation {
+            animation-name: move;
+            transition-timing-function: linear;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes move {
+            0% {
+                transform: translateX(100%);
+            }
+            5%{
+                transform: translateX(0%);
+            }
+            10%{
+                transform: translateX(100%);
+            }
+            15% {
+                transform: translate(100%, 100%);
+            }
+            25%, 75% {
+                transform: scale(1.25) rotate(145deg);
+            }
+            80%{
+                transform: translate(100%, 100%);
+            }
+            90% {
+                transform: translateX(100%);
+            }
+            95% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="animation"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.background-text {
+    position: absolute;
+
+}
+
+.wrapper {
+    position: fixed;
+    overflow: hidden;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    color: white;
+    border: 1px solid #000;
+    padding: 20px 15px 15px 20px;
+    opacity: 0.99;
+}
+
+.img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 10px 0 ;
+    background: #ff0000;
+}

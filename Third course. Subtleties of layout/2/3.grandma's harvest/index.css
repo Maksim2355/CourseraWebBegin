@@ -1,8 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 main{
-    display: inline-block;
     position: absolute;
-    top: 100px;
-    left: 15%;
+    width: 100vw;
+    height: 100%;
+    margin-top: -25px;
 }
 
 input {
@@ -12,46 +17,51 @@ input {
     position: relative;
     top: 500px;
     left: 40%;
+    z-index: 1;
 }
 
 /*n так же равняется 0 */
-#first-list:checked ~ main :nth-last-child(n + 13) {
+#first-list:checked ~ main :nth-last-child(n + 14) {
     display: inline-block;
 }
 
 
-#second-list:checked ~ main :nth-last-child(n + 9){
+#second-list:checked ~ main :nth-last-child(n + 10){
     display: inline-block;
 }
 
-#second-list:checked ~ main :nth-last-child(n + 13){
+#second-list:checked ~ main :nth-last-child(n + 14){
     display: none;
 }
 
-#third-list:checked ~ main :nth-last-child(n + 5){
+#third-list:checked ~ main :nth-last-child(n + 6){
     display: inline-block;
 }
 
-#third-list:checked ~ main :nth-last-child(n + 9){
+#third-list:checked ~ main :nth-last-child(n + 10){
     display: none;
 }
 
-#fourth-list:checked ~ main :nth-last-child(n + 1){
+#fourth-list:checked ~ main :nth-last-child(n + 2){
     display: inline-block;
 }
 
-#fourth-list:checked ~ main :nth-last-child(n + 5){
+#fourth-list:checked ~ main :nth-last-child(n + 6){
     display: none;
 }
 
 article {
     display: none;
+    position: relative;
+    left: 15%;
+    top: 150px;
     vertical-align: top;
     width: 200px;
 }
 
 article:hover {
     transform: scale(1.3);
+    cursor: pointer;
     padding: 10px;
     margin: 0 -10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -66,16 +76,27 @@ article:hover > .description-element-harvest {
     font-size: 60%;
 }
 
+
+.modal-window {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+}
+
+#element-beet:active ~ .modal-window {
+    display: block;
+    z-index: 3000;
+    opacity: 0.99;
+}
+
+.modal-window:hover {
+    display: block;
+}
+
 .img-element-harvest {
     height: 200px;
     width: 200px;
-}
-
-.button-close {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 60px;
-    width: 60px;
 }

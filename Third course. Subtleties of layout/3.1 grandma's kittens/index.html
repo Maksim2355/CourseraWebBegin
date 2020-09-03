@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Котята</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header_container-flex flex-container-column">
+        <div class="name-content">Бабулькины котята</div>
+    </header>
+
+    <main class="main_container-flex flex-container-row">
+
+        <input id="abyssinian" class="check_breed" type="checkbox" name="breed">
+        <input id="british" class="check_breed" type="checkbox" name="breed">
+        <input id="russian_blue" class="check_breed" type="checkbox" name="breed">
+        <input id="siamese" class="check_breed" type="checkbox" name="breed">
+
+        <section class="selection_breed item_selection-breed flex-container-column">
+            <label id="abyssinian_label" class="selection_bread-line selection_breed-item" for="abyssinian">Абиссинская</label>
+            <label id="british_label" class="selection_bread-line selection_breed-item" for="british">Британская</label>
+            <label id="russian_blue_label" class="selection_bread-line selection_breed-item" for="russian_blue">Русская голубая</label>
+            <label id="siamese_label" class="selection_bread-line selection_breed-item" for="siamese">Сиамская</label>
+        </section>
+
+        <section class="rating item_rating">
+            <div class="title_rating">РЕЙТИНГ</div>
+            <input id="enable_sort" class="sort_checkbox" type="checkbox" name="sort">
+            <label id="label-rating" class="rating_line" for="enable_sort">По убыванию</label>
+
+            <section class="rating_list flex-container-column">
+                <article id="rating-abyssinian" class="flex-container-column">
+                    <div>Абиссинская</div>
+                    <div class="rating-gradient flex-container-row rating-el">
+                        <div class="gradient-9 gradient"></div>
+                        <div class="rating-cat">9</div>
+                    </div>
+                </article>
+                <article id="rating-british" class="flex-container-column">
+                    <div>Британская</div>
+                    <div class="rating-gradient flex-container-row rating-el">
+                        <div class="gradient-8 gradient"></div>
+                        <div class="rating-cat">8</div>
+                    </div>
+                </article>
+                <article id="rating-russian_blue" class="flex-container-column">
+                    <div>Русская голубая</div>
+                    <div class="rating-gradient flex-container-row rating-el">
+                        <div class="gradient-10 gradient"></div>
+                        <div class="rating-cat">10</div>
+                    </div>
+                </article>
+                <article id="rating_siamese" class="flex-container-column">
+                    <div>Сиамская</div>
+                    <div class="rating-gradient flex-container-row rating-el">
+                        <div class="gradient-4 gradient"></div>
+                        <div class="rating-cat">4</div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="cat-list item_cat-list grid-container">
+
+            <article class="cat cat_1 abyssinian_cat">
+                <div>
+                    <img class="img_cat" src="res/ab_1.jpg"/>
+                    <div class="description_cat">Гоша 4 года</div>
+                </div>
+            </article>
+
+            <article class="cat cat_2 abyssinian_cat">
+                <img class="img_cat" src="res/ab_2.jpg"/>
+                <div class="description_cat">Маля 1 год</div>
+            </article>
+
+            <article class="cat cat_3 russian_blue_cat">
+                <img class="img_cat" src="res/ru_1.jpg"/>
+                <div class="description_cat">Бейсик 2 года</div>
+            </article>
+
+            <article class="cat cat_4 russian_blue_cat">
+                <img class="img_cat" src="res/ru_2.jpg"/>
+                <div class="description_cat">Мурзилкин 7 лет</div>
+            </article>
+
+            <article class="cat cat_5 british_cat">
+                <img class="img_cat" src="res/br_1.jpg"/>
+                <div class="description_cat">Дима 3 года</div>
+            </article>
+
+            <article class="cat cat_6 british_cat">
+                <img class="img_cat" src="res/br_2.jpg"/>
+                <div class="description_cat">Вошилка 11 месяцев</div>
+            </article>
+
+            <article class="cat cat_7 siamese_cat">
+                <img class="img_cat" src="res/si_1.jpg"/>
+                <div class="description_cat">Круглый 5 лет</div>
+            </article>
+
+            <article class="cat cat_8 siamese_cat">
+                <img class="img_cat" src="res/si_2.jpg"/>
+                <div class="description_cat">Аля 2 года</div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="body_line flex-container-column">
+        <div class="hr-line flex-container-row"></div>
+        <div class="flex-container-row footer_info-container-flex">
+            <div class="footer-element company_name footer_line flex-container-row">ООО бабулькины котята, 2015</div>
+            <div class="footer-element address footer_line flex-container-row">Наш адрес улица котова, д 5</div>
+        </div>
+    </footer>
+</body>
+</html>

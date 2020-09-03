@@ -1,0 +1,292 @@
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-row{
+    display: flex;
+}
+
+.name-content {
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+body {
+    background: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding-top: 32px;
+    margin-bottom: 16px;
+    flex: 2 0 auto;
+
+}
+
+.header_container-flex {
+    align-items: center;
+}
+
+main {
+    margin: 32px 16px 0 16px;
+    flex-grow: 1;
+}
+
+.main_container-flex {
+    justify-content: space-between;
+}
+
+.selection_breed {
+    background: #D3D3D3	;
+}
+
+.selection_breed-item {
+    padding: 16px;
+}
+
+.rating {
+    align-self: flex-start;
+    background: #D3D3D3;
+    padding: 4px 8px 16px 8px;
+}
+
+.selection_breed-item + .selection_breed-item {
+    border-top: 1px solid #000000;
+}
+
+.title_rating {
+    color: red;
+    text-align: start;
+    horiz-align: left;
+    margin: 2px;
+    width: 150px;
+}
+
+.sort_checkbox {
+    align-self: flex-end;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas:  "cat_1 cat_2 cat_2"
+                          "cat_3 cat_4 cat_5"
+                          "cat_6 cat_6 cat_7"
+                          "cat_8 cat_8 cat_8"
+                          "cat_8 cat_8 cat_8";
+
+}
+
+.img_cat{
+    width: 100%;
+    height: 300px;
+}
+
+.cat {
+    margin: 2px;
+    padding: 0 4px 0 4px;
+}
+
+.cat:hover .description_cat {
+    display: block;
+    position: absolute;
+    background: #000000;
+    padding: 16px;
+    color: white;
+}
+
+.description_cat {
+    display: none;
+}
+
+.hr-line {
+    width: 100%;
+    height: 1px;
+    background: #000000;
+}
+
+footer {
+    justify-content: space-between;
+    flex: 0 0 auto;
+    padding-top: 16px;
+    flex-shrink: 0;
+}
+
+.footer_info-container-flex {
+    justify-content: space-between;
+}
+
+.check_breed:checked ~ .cat-list > .cat{
+    opacity: 0.5;
+}
+
+#abyssinian:checked ~ .selection_breed #abyssinian_label {
+    background: #999999;
+}
+
+#abyssinian:checked ~ .cat-list > .abyssinian_cat {
+    opacity: 1;
+}
+
+#british:checked ~ .selection_breed #british_label {
+    background: #999999;
+}
+
+#british:checked ~ .cat-list > .british_cat {
+    opacity: 1;
+}
+
+#russian_blue:checked ~ .selection_breed #russian_blue_label {
+    background: #999999;
+}
+
+#russian_blue:checked ~ .cat-list > .russian_blue_cat {
+    opacity: 1;
+}
+
+#siamese:checked ~ .selection_breed #siamese_label {
+    background: #999999;
+}
+
+#siamese:checked ~ .cat-list > .siamese_cat {
+    opacity: 1;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.cat_1 {
+    grid-area: cat_1;
+}
+
+.cat_2{
+    grid-area: cat_2;
+}
+
+
+.cat_3 {
+    grid-area: cat_3;
+}
+
+.cat_4{
+    grid-area: cat_4;
+}
+
+.cat_5{
+    grid-area: cat_5;
+}
+
+.cat_6 {
+    grid-area: cat_6;
+}
+
+.cat_7{
+    grid-area: cat_7;
+}
+
+.cat_8 {
+    grid-area: cat_8;
+}
+
+.address {
+    color: #1565C0;
+}
+
+.footer-element {
+    padding: 16px 32px;
+}
+
+.check_breed {
+    display: none;
+}
+
+
+.item_selection-breed{
+    order: 1;
+}
+
+
+.item_cat-list {
+    order: 2;
+}
+
+.item_rating {
+    order: 3;
+}
+
+
+#label-rating {
+    float: right;
+    font-size: 70%;
+    horiz-align: right;
+}
+
+#enable_sort {
+    float: right;
+    horiz-align: right;
+}
+
+.rating_list {
+    margin-top: 30px;
+}
+
+.rating-el {
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.gradient {
+
+}
+
+.gradient-10{
+    background: linear-gradient(90deg, #388E3C, white);
+    flex-basis: 120px;
+}
+
+.gradient-9{
+    background: linear-gradient(90deg, #388E3C, white);
+    flex-basis: 105px;
+}
+
+.gradient-8 {
+    background: linear-gradient(90deg, yellow, white);
+    flex-basis: 90px;
+}
+
+.gradient-4 {
+    background: linear-gradient(90deg, red, white);
+    flex-basis: 50px;
+}
+
+.rating-cat {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+#enable_sort:checked ~ .rating_list > #rating-abyssinian {
+    order: 2;
+}
+
+
+#enable_sort:checked ~ .rating_list > #rating-british {
+    order: 3;
+}
+
+
+#enable_sort:checked ~ .rating_list > #rating-russian_blue {
+    order: 1;
+}
+
+
+#enable_sort:checked ~ .rating_list > #rating_siamese {
+    order: 4;
+}

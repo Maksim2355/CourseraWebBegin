@@ -1,10 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.main-form > div {
-    horiz-align: center;
+    font-family: Arial, serif;
 }
 
 .main-form_theme-grey {
@@ -16,8 +13,39 @@
 .logo-yandex {
     position: absolute;
     right: 10%;
-    width: 167px;
-    height: 130px;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+}
+
+.showcase_indents {
+    padding-top: 180px;
+}
+
+.showcase__button {
+    width: 60px;
+    height: 60px;
+    background: #ffcf11;
+    border-radius: 30px;
+}
+
+.showcase__button_previous {
+    order: 1;
+}
+
+.block-car {
+    width: 600px;
+    order: 2;
+}
+
+.block-car__title {
+    margin-bottom: 40px;
+}
+
+.showcase__button_next{
+    order: 3;
 }
 
 .video {
@@ -26,9 +54,66 @@
     background: url("res/background_video.jpg");
 }
 
+.video_indents {
+    margin: 40px auto 0 auto;
+}
+
 .video__name {
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    width: 600px;
+    text-align: center;
+    font-size: 29px;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
 }
 
+.video__name_indents {
+    padding: 8px 0 8px 0;
+}
+
+.about-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-service__title {
+    margin: 10px 0 40px 0;
+}
+
+.about-service_indents {
+    margin: 40px;
+}
+
+.block-ability {
+    display: flex;
+    justify-content: space-between;
+}
+
+.test-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-start;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.box-ability__title {
+    font-size: 30px;
+}
+
+.box-ability__description {
+    font-size: 16px;
+}
+
+.button {
+    background: #ffcf11;
+    border-radius: 8px;
+
+}

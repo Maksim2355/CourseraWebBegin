@@ -5,9 +5,9 @@
 }
 
 .main-form_theme-grey {
-    height: 1600px;
-    margin: 20px;
-    background: #F5F5F5;
+    padding-bottom: 48px;
+    margin: 18px;
+    background: #eeeeee;
 }
 
 .logo-yandex {
@@ -18,39 +18,65 @@
 .showcase {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .showcase_indents {
-    padding-top: 180px;
+    padding-top: 150px;
 }
 
-.showcase__button {
-    width: 60px;
-    height: 60px;
+.button-selector-car_indents {
+
+}
+
+.showcase__block-car_indents {
+    margin: 0 32px;
+}
+
+.button-selector-car {
+
+}
+
+.button_round {
     background: #ffcf11;
-    border-radius: 30px;
+    border-radius: 100%;
 }
 
-.showcase__button_previous {
+.button-selector-car__button_center {
+    position: absolute;
+}
+.previous-btn{
+    width: 80px;
+    height: 80px;
     order: 1;
 }
 
-.block-car {
-    width: 600px;
+
+.next-btn {
+    width: 80px;
+    height: 80px;
+    order: 3;
+}
+
+.button-selector-car__button_center {
+    margin: 27px 30px;
+}
+
+.showcase__block-car {
+    display: flex;
+    flex-direction: column;
+    width: 675px;
     order: 2;
 }
 
 .block-car__title {
     margin-bottom: 40px;
-}
-
-.showcase__button_next{
-    order: 3;
+    text-align: left;
 }
 
 .video {
+    width: 640px;
     height: 360px;
-    width: 600px;
     background: url("res/background_video.jpg");
 }
 
@@ -58,9 +84,22 @@
     margin: 40px auto 0 auto;
 }
 
+.video__button-play {
+    position: absolute;
+    margin: 140px 260px;
+    width: 120px;
+    height: 120px;
+}
+
+.play {
+    /* 60 45 */
+    margin: 35px 45px;
+}
+
+
 .video__name {
     position: absolute;
-    width: 600px;
+    width: 640px;
     text-align: center;
     font-size: 29px;
     background: rgba(0, 0, 0, 0.7);
@@ -79,6 +118,7 @@
 
 .about-service__title {
     margin: 10px 0 40px 0;
+    font-size: 32px;
 }
 
 .about-service_indents {
@@ -88,6 +128,10 @@
 .block-ability {
     display: flex;
     justify-content: space-between;
+}
+
+.block-ability_indents {
+    margin: 0 64px;
 }
 
 .test-service {
@@ -101,19 +145,42 @@
 
 .title {
     text-align: center;
-    font-size: 36px;
+    font-size: 50px;
+}
+
+.box-ability {
+    width: 200px;
 }
 
 .box-ability__title {
     font-size: 30px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .box-ability__description {
     font-size: 16px;
 }
 
-.button {
-    background: #ffcf11;
-    border-radius: 8px;
+.test-service__button {
+    width: auto;
+    background: radial-gradient(farthest-corner ellipse, #FDD835, #ffdf05);
+    border-radius: 10px;
+    font-size: 36px;
+    padding: 16px;
+    margin: 48px auto 0 auto;
+}
 
+.text {
+    cursor: pointer;
+}
+
+.test-service__button:hover {
+    background: radial-gradient(farthest-corner ellipse, #FDD835, #FFEE58)
+}
+
+.button_opacity:hover {
+    opacity: 80%;
 }

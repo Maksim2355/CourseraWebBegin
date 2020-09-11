@@ -7,146 +7,172 @@
 </head>
 <body>
 
-    <input id="first-list" type="radio" name="list-harvest" checked>
-    <input id="second-list" type="radio" name="list-harvest">
-    <input id="third-list" type="radio" name="list-harvest">
-    <input id="fourth-list" type="radio" name="list-harvest">
+    <input id="first-list"  class="selector-harvest"  type="radio" name="list-harvest" checked>
+    <input id="second-list" class="selector-harvest"  type="radio" name="list-harvest">
+    <input id="third-list"  class="selector-harvest"  type="radio" name="list-harvest">
+    <input id="fourth-list" class="selector-harvest"  type="radio" name="list-harvest">
+
+    <input id="close-btn" class="btn-close" type="checkbox" name="modal-close">
+
+    <input id="element-beet" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-cabbage" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-carrot" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-corn"  class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-cucumber" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-eggplant" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-melon" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-onion" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-parsley" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-potato" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-pumpkin" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-squash" class="modal-call" type="checkbox" name="modal-check">
+    <input id="element-pepper" class="modal-call" type="checkbox" name="modal-check">
 
 
-    <main>
-        <article id="element-beet" class="element-harvest">
-            <img class="img-element-harvest" src="res/beet.jpg">
-            <div class="description-element-harvest">
-               Однолетнее, двулетнее или многолетнее травянистое растение; вид рода Свёкла семейства Амарантовые. Культивируется на больших площадях повсеместно. Однолетнее, двулетнее или многолетнее травянистое растение; вид рода Свёкла семейства Амарантовые. Культивируется на больших площадях повсеместно.
-            </div>
-        </article>
-
-        <article id="element-cabbage" class="element-harvest">
-            <img class="img-element-harvest" src="res/cabbage.jpg">
-            <div class="description-element-harvest">
-                Двулетнее растение, сельскохозяйственная культура; вид рода Капуста семейства Капустные (Крестоцветные).
-            </div>
-        </article>
-
-        <article id="element-carrot" class="element-harvest">
-            <img  class="img-element-harvest" src="res/carrot.jpeg">
-            <div class="description-element-harvest">
-                Двулетнее растение, овощная культура, подвид вида морковь дикая. Обычно в быту под словом «морковь» подразумевается широко распространенный корнеплод именно этого растения, который обычно относят к овощам.
-            </div>
-        </article>
-
-        <article id="element-corn" class="element-harvest">
-            <img class="img-element-harvest" src="res/corn.png">
-            <div class="description-element-harvest">
-                Однолетнее травянистое культурное растение, единственный культурный представитель рода Кукуруза семейства Злаки. Помимо культурной кукурузы, род Кукуруза включает четыре вида
-            </div>
-
-        </article>
 
 
-        <article id="element-cucumber" class="element-harvest">
-            <img class="img-element-harvest" src="res/cucumber.jpg">
-            <div class="description-element-harvest">
-                Однолетнее травянистое растение, вид рода Огурец семейства Тыквенные, овощная культура.
+    <main class="main">
+        <section class="block-harvest block-harvest_indents">
+            <article class="box-harvest">
+                <label for="element-beet">
+                    <img class="box-harvest__image" alt="" src="res/beet.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                        Однолетнее, двулетнее или многолетнее травянистое растение; вид рода Свёкла семейства Амарантовые. Культивируется на больших площадях повсеместно.
+                </div>
+            </article>
 
-            </div>
-        </article>
+            <article class="box-harvest">
+                <label for="element-cabbage">
+                    <img class="box-harvest__image" alt="" src="res/cabbage.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Двулетнее растение, сельскохозяйственная культура; вид рода Капуста семейства Капустные (Крестоцветные).
+                </div>
+            </article>
 
+            <article class="box-harvest">
+                <label for="element-carrot">
+                    <img class="box-harvest__image" alt="" src="res/carrot.jpeg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Двулетнее растение, овощная культура, подвид вида морковь дикая. Обычно в быту под словом «морковь» подразумевается широко распространенный корнеплод именно этого растения, который обычно относят к овощам.
+                </div>
+            </article>
 
-        <article id="element-eggplant" class="element-harvest">
-            <img  class="img-element-harvest" src="res/eggplant.jpg">
-            <div class="description-element-harvest">
-                Вид многолетних травянистых растений рода Паслён. Возделывается как однолетнее растение. Съедобен только плод. В ботаническом смысле это ягода, в кулинарном рассматривается как овощ. Известен также под названием бадриджан.
+            <article class="box-harvest">
+                <label for="element-corn">
+                    <img class="box-harvest__image" alt="" src="res/corn.png"/>
+                </label>
+                <div class="box-harvest__description">
+                    Однолетнее травянистое культурное растение, единственный культурный представитель рода Кукуруза семейства Злаки. Помимо культурной кукурузы, род Кукуруза включает четыре вида
+                </div>
+            </article>
 
-            </div>
-        </article>
+            <article class="box-harvest">
+                <label for="element-cucumber">
+                    <img class="box-harvest__image" alt="" src="res/cucumber.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Однолетнее травянистое растение, вид рода Огурец семейства Тыквенные, овощная культура.
+                </div>
+            </article>
 
+            <article class="box-harvest">
+                <label for="element-eggplant">
+                    <img class="box-harvest__image" alt="" src="res/eggplant.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Вид многолетних травянистых растений рода Паслён. Возделывается как однолетнее растение.
+                </div>
+            </article>
 
-        <article id="element-melon" class="element-harvest">
-            <img class="img-element-harvest" src="res/melon.jpg">
-            <div class="description-element-harvest">
-                Растение семейства Тыквенные, вид рода Огурец, бахчевая культура. Родиной дыни считается Средняя Азия и Малая Азия.
-            </div>
-        </article>
+            <article class="box-harvest">
+                <label for="element-melon">
+                    <img class="box-harvest__image" alt="" src="res/melon.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Растение семейства Тыквенные, вид рода Огурец, бахчевая культура. Родиной дыни считается Средняя Азия и Малая Азия.
+                </div>
+            </article>
 
+            <article class="box-harvest">
+                <label for="element-onion">
+                    <img class="box-harvest__image" alt="" src="res/onion.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Многолетнее травянистое растение, вид рода Лук семейства Луковые, широко распространённая овощная культура.
+                </div>
+            </article>
 
-        <article id="element-onion" class="element-harvest">
-            <img class="img-element-harvest" src="res/onion.jpg">
-            <div class="description-element-harvest">
-                Многолетнее травянистое растение, вид рода Лук семейства Луковые, широко распространённая овощная культура.
-            </div>
-        </article>
+            <article class="box-harvest">
+                <label for="element-parsley">
+                    <img class="box-harvest__image" alt="" src="res/parsley.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Одно-двухлетнее растение из семейства зонтичных высотой 50-80 см. Корень мясистый, стержневой, цилиндрический.
+                </div>
+            </article>
 
+            <article class="box-harvest">
+                <label for="element-potato">
+                    <img class="box-harvest__image" alt="" src="res/potato.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Вид многолетних клубненосных травянистых растений из рода Паслён семейства Паслёновые. Клубни картофеля являются важным пищевым продуктом.
+                </div>
+            </article>
 
-        <article id="element-parsley" class="element-harvest">
-            <img class="img-element-harvest" src="res/parsley.jpg">
-            <div class="description-element-harvest">
-                Одно-двухлетнее растение из семейства зонтичных высотой 50-80 см. Корень мясистый, стержневой, цилиндрический. Листья темно-зеленые, сверху блестящие. Лист петрушки, в сушёном и свежем виде, - популярная кулинарная приправа.
+            <article class="box-harvest">
+                <label for="element-pumpkin">
+                    <img class="box-harvest__image" alt="" src="res/pumpkin.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Род травянистых растений семейства Тыквенные. Под словом «тыква» в России обычно понимаются виды Тыква обыкновенная и Тыква гигантская
+                </div>
+            </article>
 
-            </div>
-        </article>
+            <article class="box-harvest">
+                <label for="element-squash">
+                    <img class="box-harvest__image" alt="" src="res/squash.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Кустовая разновидность тыквы обыкновенной с продолговатыми плодами, без плетей. Плоды могут быть зелёного, жёлтого, чёрного или белого цвета. Мякоть нежная и быстроваркая.
+                </div>
+            </article>
 
+            <article class="box-harvest">
+                <label for="element-pepper">
+                    <img class="box-harvest__image" alt="" src="res/pepper.jpg"/>
+                </label>
+                <div class="box-harvest__description">
+                    Вид однолетних травянистых растений рода Capsicum семейства Паслёновые, а также его плоды. Сельскохозяйственная овощная культура.
+                </div>
+            </article>
+        </section>
 
-        <article id="element-potato" class="element-harvest">
-            <img class="img-element-harvest" src="res/potato.jpg">
-            <div class="description-element-harvest">
-                Вид многолетних клубненосных травянистых растений из рода Паслён семейства Паслёновые. Клубни картофеля являются важным пищевым продуктом. Плоды ядовиты в связи с содержанием в них соланина.
-            </div>
-        </article>
-
-
-        <article id="element-pumpkin" class="element-harvest">
-            <img class="img-element-harvest" src="res/pumpkin.jpg">
-            <div class="description-element-harvest">
-                Род травянистых растений семейства Тыквенные. Под словом «тыква» в России обычно понимаются виды Тыква обыкновенная и Тыква гигантская, широко распространённые и культивируемые как пищевое и кормовое растение.
-            </div>
-        </article>
-
-
-        <article id="element-squash" class="element-harvest">
-            <img class="img-element-harvest" src="res/squash.jpg">
-            <div class="description-element-harvest">
-                Кустовая разновидность тыквы обыкновенной с продолговатыми плодами, без плетей. Плоды могут быть зелёного, жёлтого, чёрного или белого цвета. Мякоть нежная и быстроваркая.
-            </div>
-        </article>
-
-
-        <article id="element-tomato" class="element-harvest">
-            <img class="img-element-harvest" src="res/tomato.jpg">
-            <div class="description-element-harvest">
-                Однолетнее или многолетнее травянистое растение, вид рода Паслён семейства Паслёновые.
-                Возделывается как овощная культура; выращивается ради съедобных плодов - сочных многогнёздных ягод различной формы и окраски, также называемых томатами или помидорами.
-            </div>
-        </article>
-
-
-        <article id="element-watermelon" class="element-harvest">
-            <img class="img-element-harvest" src="res/watermelon.jpg">
-            <div class="description-element-harvest">
-                Однолетнее травянистое растение, вид рода Арбуз семейства Тыквенные. Бахчевая культура.
-            </div>
-        </article>
-
-
-        <article id="element-pepper" class="element-harvest">
-            <img  class="img-element-harvest" src="res/pepper.jpg">
-            <div class="description-element-harvest">
-                Вид однолетних травянистых растений рода Capsicum семейства Паслёновые, а также его плоды. Сельскохозяйственная овощная культура. Сорта перца стручкового делят на сладкие и горькие. Последним, известным как красный перец, острый вкус придаёт алкалоид капсаицин. Разновидности с плодами сладкого вкуса - перец сладкий. Существует множество сортотипов, например перец болгарский.
-            </div>
-        </article>
-
-
-        <article id="element-chinese" class="element-harvest">
-            <img class="img-element-harvest" src="res/сhinese.jpg">
-            <div class="description-element-harvest">
-                Травянистое растение семейства Капустные, овощная культура; подвид репы. Эту культуру также нередко называют «китайским салатом».
-            </div>
-        </article>
-
-        <div class="modal-window">
-            <div class="background-black"></div>
-            <img class="img-fullscreen" src="res/beet.jpg">
-        </div>
     </main>
+
+    <section class="modal-window">
+        <div class="img-fullscreen">
+            <img class="img-fullscreen__img" alt="" src="res/beet.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/cabbage.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/carrot.jpeg">
+            <img class="img-fullscreen__img" alt="" src="res/corn.png">
+            <img class="img-fullscreen__img" alt="" src="res/cucumber.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/eggplant.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/melon.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/onion.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/parsley.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/potato.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/pumpkin.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/squash.jpg">
+            <img class="img-fullscreen__img" alt="" src="res/pepper.jpg">
+        </div>
+        <label for="close-btn element-beet">
+            <img class="modal-window__img-close" src="res/close_img.png" alt="close">
+        </label>
+    </section>
+
 </body>
 </html>

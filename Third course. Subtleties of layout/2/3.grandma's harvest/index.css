@@ -4,10 +4,13 @@ body {
 }
 
 #first-list:checked ~ main > .block-harvest :nth-last-child(n + 10) {
+    animation: next_slide 1s linear 0s 1;
     display: inline-block;
 }
 
+
 #second-list:checked ~ main > .block-harvest :nth-last-child(n + 7){
+    animation: next_slide 1s linear 0s 1;
     display: inline-block;
 }
 
@@ -16,6 +19,7 @@ body {
 }
 
 #third-list:checked ~ main > .block-harvest :nth-last-child(n + 4){
+    animation: next_slide 1s linear 0s 1;
     display: inline-block;
 }
 
@@ -24,11 +28,24 @@ body {
 }
 
 #fourth-list:checked ~ main > .block-harvest :nth-last-child(n){
+    animation: next_slide 1s linear 0s 1;
     display: inline-block;
 }
 
 #fourth-list:checked ~ main > .block-harvest :nth-last-child(n + 5){
     display: none;
+}
+
+@keyframes next_slide {
+    from {
+        opacity: 0;
+        margin-left: -100%;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+
 }
 
 .selector-harvest {
@@ -41,22 +58,23 @@ body {
 
 .block-harvest {
     display: block;
-    width: 60%;
+    width: 80%;
     height: 400px;
-    max-width: 60%;
-    min-width: 100px;
-    min-height: 100px;
-    max-height: 400px;
+    margin: 0 auto;
 }
 
 .block-harvest_indents {
-    margin: 100px 300px
+    margin-top: 150px;
 }
 
 .box-harvest {
     display: none;
-    width: 200px;
+    width: 20%;
     vertical-align: top;
+}
+
+.box-harvest__indents {
+    padding: 16px;
 }
 
 .box-harvest:hover {
@@ -113,12 +131,12 @@ body {
 
 .img-fullscreen__img {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
-    margin-top: -350px;
-    margin-left: -350px;
-    width: 700px;
-    height: 700px;
+    margin-left: -25%;
+    margin-top: -15%;
+    width: 50%;
+    height: 60%;
 }
 

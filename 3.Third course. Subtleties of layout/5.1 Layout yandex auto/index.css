@@ -4,6 +4,10 @@
     font-family: Arial, serif;
 }
 
+div {
+    cursor: pointer;
+}
+
 .main-form_theme-grey {
     padding-bottom: 48px;
     margin: 18px;
